@@ -23,10 +23,12 @@
 
    <div id="container">
 
-     <?php
-        $this->load->view($contenido);
-      ?>
+     <div class="col-md-5">
+       <?php
+          $this->load->view($contenido);
+        ?>
 
+     </div>
 
     </div>
 
