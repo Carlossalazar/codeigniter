@@ -22,13 +22,14 @@ class User extends CI_Controller {
 
     public function insert(){
         $datos = $this->input->post();
+
         if(isset($datos)){
             $txtId = $datos['txtIdper'];
-            $txtNombres = $datos['txtNombre'];
-            $txtApellidos = $datos['txtApellido'];
+            $txtNombre = $datos['txtNombre'];
+            $txtApellido = $datos['txtApellido'];
             $txtCorreo = $datos['txtCorreo'];
             $txtTelefono = $datos['txtTelefono'];
-            $this->Model_Usuario->insertUsuario($txtId, $txtNombre, $txtApellido, $txtCorreo, $txtTelefono);
+            $this->Model_User->insertUsuario($txtId, $txtNombre, $txtApellido, $txtCorreo, $txtTelefono);
             redirect('');
         }
     }

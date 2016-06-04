@@ -29,8 +29,3 @@
 
   <button type="submit" class="btn btn-default">Registrar Usuario</button>
 </form>
-
-<<?php
-  print_r($selPerfil);
-
- ?>
