@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+//defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Controller {
 
@@ -12,6 +12,7 @@ class User extends CI_Controller {
 
 	public function index()
 	{
+    $data['title'] = 'Pagina inicio';
     $data['contenido']= "user/index";
     $data['selPerfil']= $this->Model_User->selPerfil();
 		$this->load->view("plantilla",$data);
@@ -23,11 +24,11 @@ class User extends CI_Controller {
         $datos = $this->input->post();
         if(isset($datos)){
             $txtId = $datos['txtIdper'];
-            $txtNombres = $datos['txtNombres'];
-            $txtApellidos = $datos['txtApellidos'];
+            $txtNombres = $datos['txtNombre'];
+            $txtApellidos = $datos['txtApellido'];
             $txtCorreo = $datos['txtCorreo'];
             $txtTelefono = $datos['txtTelefono'];
-            $this->Model_Usuario->insertUsuario($txtId, $txtNombres, $txtApellidos, $txtCorreo, $txtTelefono);
+            $this->Model_Usuario->insertUsuario($txtId, $txtNombre, $txtApellido, $txtCorreo, $txtTelefono);
             redirect('');
         }
     }
