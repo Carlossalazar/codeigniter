@@ -33,6 +33,15 @@ class User extends CI_Controller {
             $this->Model_User->insertUsuario($txtId, $txtNombre, $txtApellido, $txtCorreo, $txtTelefono);
             redirect('');
         }
+
+
+    }
+
+    public function delete($id = NULL){
+        if($id != NULL){
+            $this->Model_User->deleteUsuario($id);
+            redirect('');
+        }
     }
 
 

@@ -35,8 +35,8 @@
                       <td><?php echo $value->usu_correo; ?></td>
                       <td>
                             <center>
-                                <a href="<?php echo base_url('usuario/delete')."/".$value->usu_id; ?>" title="Eliminar"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
-                                <a href="<?php echo base_url('usuario/edit')."/".$value->usu_id; ?>" title="Editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+                                <a href="<?php echo base_url('User/delete')."/".$value->usu_id; ?>" title="Eliminar"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                <a href="<?php echo base_url('User/edit')."/".$value->usu_id; ?>" title="Editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
                           </center>
                       </td>
 
