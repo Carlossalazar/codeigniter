@@ -28,6 +28,12 @@ class Model_User extends CI_Model
 
     }
 
+    //funcion para listar usuarios
+    public function listUsuario(){
+        $query = $this->db->query("SELECT * FROM usuario u inner join perfil p on u.per_id=p.per_id");
+        return $query->result();
+    }
+
 
 
 }

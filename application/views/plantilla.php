@@ -9,6 +9,7 @@
   <title><?php echo $title ?></title>
 
   <link href="<?php echo base_url('assets/css/bootstrap.min.css')?>" rel="stylesheet">
+  <script src="<?php echo base_url('assets/js/jquery.min.js')?>"></script>
   <script src="<?php echo base_url('assets/js/bootstrap.js')?>"></script>
 
 </head>
@@ -16,14 +17,14 @@
 <body >
 
   <header>
-    cabeza
+
   </header>
 
 
 
    <div id="container">
 
-     <div class="col-md-5">
+     <div class="col-md-7">
        <?php
           $this->load->view($contenido);
         ?>

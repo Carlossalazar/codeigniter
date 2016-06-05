@@ -15,6 +15,7 @@ class User extends CI_Controller {
     $data['title'] = 'Pagina inicio';
     $data['contenido']= "user/index";
     $data['selPerfil']= $this->Model_User->selPerfil();
+    $data['listaUsuario']= $this->Model_User->listUsuario();
 		$this->load->view("plantilla",$data);
 
 	}
