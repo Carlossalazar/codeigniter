@@ -49,7 +49,7 @@
       <div role="tabpanel" class="tab-pane" id="profile">
           <div class="row">
               <div class="col-md-7">
-                  <form method="POST" action="<?php echo base_url('usuario/insert')?>">
+                  <form method="POST" action="<?php echo base_url('user/insert')?>">
             <div class="form-group">
               <label for="exampleInputEmail1">Perfil</label>
               <select name="txtIdper" class="form-control">
@@ -60,11 +60,11 @@
               </select>
             </div>
               <div class="form-group">
-              <label for="exampleInputEmail1">Nombres</label>
+              <label for="exampleInputEmail1">Nombre</label>
               <input type="text" name="txtNombre" class="form-control" id="exampleInputEmail1" placeholder="nombre">
             </div>
               <div class="form-group">
-              <label for="exampleInputEmail1">Apellidos</label>
+              <label for="exampleInputEmail1">Apellido</label>
               <input type="text" name="txtApellido" class="form-control" id="exampleInputEmail1" placeholder="Apellido">
             </div>
               <div class="form-group">

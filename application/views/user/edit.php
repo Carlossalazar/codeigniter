@@ -18,12 +18,12 @@
 
             </div>
             <div class="form-group">
-            <label for="exampleInputEmail1">Nombres</label>
-            <input type="text" name="txtNombres" class="form-control" id="exampleInputEmail1" placeholder="nombres">
+            <label for="exampleInputEmail1">Nombre</label>
+            <input type="text" name="txtNombre" class="form-control" id="exampleInputEmail1" placeholder="nombres">
           </div>
             <div class="form-group">
-            <label for="exampleInputEmail1">Apellidos</label>
-            <input type="text" name="txtApellidos" class="form-control" id="exampleInputEmail1" placeholder="Apellidos">
+            <label for="exampleInputEmail1">Apellido</label>
+            <input type="text" name="txtApellido" class="form-control" id="exampleInputEmail1" placeholder="Apellidos">
           </div>
             <div class="form-group">
             <label for="exampleInputEmail1">Correo Electrónico</label>
