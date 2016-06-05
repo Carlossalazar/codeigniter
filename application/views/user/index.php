@@ -61,11 +61,11 @@
             </div>
               <div class="form-group">
               <label for="exampleInputEmail1">Nombres</label>
-              <input type="text" name="txtNombres" class="form-control" id="exampleInputEmail1" placeholder="nombres">
+              <input type="text" name="txtNombre" class="form-control" id="exampleInputEmail1" placeholder="nombre">
             </div>
               <div class="form-group">
               <label for="exampleInputEmail1">Apellidos</label>
-              <input type="text" name="txtApellidos" class="form-control" id="exampleInputEmail1" placeholder="Apellidos">
+              <input type="text" name="txtApellido" class="form-control" id="exampleInputEmail1" placeholder="Apellido">
             </div>
               <div class="form-group">
               <label for="exampleInputEmail1">Correo Electrónico</label>

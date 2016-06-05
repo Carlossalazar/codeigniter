@@ -39,6 +39,23 @@ class Model_User extends CI_Model
         $this->db->delete('usuario');
     }
 
+    public function editUsuario($id){
+      $consulta = $this->db->query("SELECT * FROM usuario u inner join perfil p on u.per_id = p.per_id WHERE u.usu_id = $id");
+      return $consulta->result();
+    }
+
+    public function updateUsuario($txtUsuid,$txtPerid, $txtNombre, $txtApellido, $txtCorreo, $txtTelefono){
+        $array = array(
+            'per_id' => $txtPerid,
+            'usu_nombres' => $txtNombre,
+            'usu_apellidos' => $txtApellido,
+            'usu_correo' => $txtCorreo,
+            'usu_telefono' => $txtTelefono
+        );
+        $this->db->where('usu_id', $txtUsuid);
+        $this->db->update('usuario',$array);
+    }
+
 
 
 }

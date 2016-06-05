@@ -44,6 +44,34 @@ class User extends CI_Controller {
         }
     }
 
+    public function edit($id = NULL){
+        if($id != NULL){
+            //mostrar datos
+            $data['contenido'] = 'user/edit';
+            $data['selPerfil'] = $this->Model_User->selPerfil();
+            $data['datosUsuario'] = $this->Model_User->editUsuario($id);
+            $this->load->view('plantilla', $data);
+        }else{
+            //regresar a index enviar parametro
+            redirect('');
+        }
+
+    }
+
+    public function update(){
+        $datos = $this->input->post();
+        if(isset($datos)){
+            $txtUsuid = $datos['txtUsuid'];
+            $txtPerid = $datos['txtPerid'];
+            $txtNombre = $datos['txtNombre'];
+            $txtApellido = $datos['txtApellido'];
+            $txtCorreo = $datos['txtCorreo'];
+            $txtTelefono = $datos['txtTelefono'];
+            $this->Model_User->updateUsuario($txtUsuid,$txtPerid, $txtNombre, $txtApellido, $txtCorreo, $txtTelefono);
+            redirect('');
+        }
+    }
+
 
 
 }
