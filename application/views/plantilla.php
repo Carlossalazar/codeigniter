@@ -75,11 +75,11 @@
           </div>
         </div>
         <footer>
-                            <hr style="border-top: 1px solid #0086b3">
-                            <center>
-                                &copy; 2016 | Todo los Derechos Reservados 
-                            </center>
-                        </footer>
+          <hr style="border-top: 1px solid #0086b3">
+            <center>
+              &copy; 2016 | Todo los Derechos Reservados
+            </center>
+        </footer>
 
 
      </div>
